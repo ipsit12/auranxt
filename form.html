@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="">
+        <label for="Name" class="mt-5 mb-2">Name</label>
+        <div class="d-flex justify-content-between align-items-center gap-3">
+          <input
+            type="text"
+            placeholder="First"
+            class="Name"
+            style="width: 50%"
+          />
+
+          <input
+            type="text"
+            placeholder="Last"
+            class="Name"
+            style="width: 50%"
+          />
+        </div>
+
+        <label for="email" class="mt-4 d-block">Email</label>
+        <input type="email" class="email" placeholder="email" style="width: 50%">
+
+        <label for="Address" class="mt-4 d-block">Address</label>
+        <input type="text" class="address" placeholder="Street Address" style="width: 100%">
+        <input type="text" class="address mt-3" placeholder="Street Address line 2" style="width: 100%">
+
+        <div class="d-flex justify-content-between align-items-center gap-3">
+        <input type="text" class="address mt-3" placeholder="City" style="width: 50%">
+        <input type="text" class="address mt-3" placeholder="Region" style="width: 50%">
+        </div>
+
+         <div class="d-flex justify-content-between align-items-center gap-3">
+        <input type="text" class="address mt-3" placeholder="Postal/Zip Code" style="width: 50%">
+        <input type="text" class="address mt-3" placeholder="Country" style="width: 50%">
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center gap-3">
+            <div style="width:50%;">
+        <label for="phone" class="mt-4 d-block">Phone Number</label>
+        <input type="tel" class="phone" placeholder="### ### ####" style="width: 100%">
+        </div>
+
+        <div style="width:50%;">
+         <label for="phone" class="mt-4 d-block">Alternate Number</label>
+        <input type="tel" class="phone" placeholder="### ### ####" style="width: 100%">
+        </div>
+
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center gap-3">
+            <div style="width:50%;">
+        <label for="position" class="mt-4 d-block">Position that you are applying for</label>
+        <select name="position" id="position" style="width: 100%">
+            <option selected>*Please Select*</option>
+            <option value="developer">Developer</option>
+            <option value="sales executive">Sales executive</option>
+        </select>
+        </div>
+
+        <div style="width:50%;">
+          <label for="jobtype" class="mt-4 d-block">Job Type</label>
+        <select name="jobtype" id="jobtype" style="width: 100%">
+            <option selected>*Please Select*</option>
+            <option value="type 1">Type 1</option>
+            <option value="type 2">Type 2</option>
+        </select>
+        </div>
+        
+        </div>
+
+
+        <label for="url" class="mt-4 d-block">Add resume/CV URL</label>
+        <input type="text" class="url" style="width: 50%">
+
+
+        <p class="mt-4">How did you hear about us?</p>
+        <input type="radio" value="Google Search" id="googlesearch" name="hear">
+        <label for="googlesearch">Google Search</label> <br>
+         <input type="radio" value="online advert" id="onlineadvert" name="hear">
+        <label for="onlineadvert">Online Advert</label> <br>
+        <input type="radio" value="friend recommendation" id="friendrecommendation" name="hear">
+        <label for="friendrecommendation">Friend Recommendation</label> <br>
+         <input type="radio" value="other" id="other" name="hear">
+        <label for="other">Other</label> <br>
+
+        <input type="submit" value="SEND APPLICATION">
+
+      </form>
+    </div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
